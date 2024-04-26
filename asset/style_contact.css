@@ -129,7 +129,10 @@ button:hover{
     transform: rotateY(360deg);
     transition: 0.8s;     
 }
-/* Css baner trang SP */
+.active-menu{
+    color: #C49A6C;
+}
+    /*Banner */
 .banner_sp  {
     margin-top: 18px;
     width: 100%;
@@ -150,7 +153,7 @@ button:hover{
 .banner_sp ul li a {
     font-size: 26px;
     color: #fff;
-   
+
 }
 .banner_sp ul li a:hover{
     color: #C49A6C;
@@ -158,136 +161,54 @@ button:hover{
 .ti-angle-right {
     font-size: 1rem;
     color: #fff;
-   
+
 }
 .active_b {
     color: #C49A6C;
 }
-.list_dmsp {
+/* Csss liên hệ */
+.container_contacts {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
     background-color: #fff;
-}
-.content-dmsp{
-    display: flex;
-    justify-content: center;
-    border: 0px solid #000;
-    width: 1716px;
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
-    margin-left: 50%;
-    transform: translateX(-50%);
-    position: relative;
-    margin-top: -70px;
-    background-color: #fff;
-    border-radius: 1%;
-}
-.content-dmsp ul {
-    padding: 0px 50px 0 50px;
-    border-right: 1px solid #ccc;
-}
-
-.content-dmsp ul li{
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-
-}
-.content-dmsp ul li img {
-    width: 90px;
-    height: 100%;
-}
-.content-dmsp ul li a{
-    font-size: 20px;
-}
-.content-dmsp ul li:hover a{
-    color: #C49A6C;
-}
-.content-dmsp ul:hover  img{
-    transform: rotateY(3.142rad);
-    transition: 0.5s;   
-    transition: all 400ms ease;
-    -webkit-transition: all 400ms ease;
-}
- /* Css cho phần list sp */
- .main-content {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 300px;
-    
- 
-}
-.main-content-left{
-   margin-top: -280px;
-    margin-left: 15px;
-    border-radius: 4%;
-}
-.main-content-right{
-    width: 70%;
-    margin-top: 6px;
-}
-.menu-main ul li {
-    font-size: 1.5em;
-    border-bottom: 0.5px solid #ccc ;
-    margin-left:-30px;
-}
-.menu-main ul li:hover a
-{
-    color: #C49A6C;
-    cursor: pointer;
-} 
-.menu-main{
-    margin-bottom: 80px;
-}
-.menu-main p{
-padding: 8px;
-color: #fff;
-background-color: #C49A6C;
-font-weight: 800;
-padding-left: 20px;
-font-size: 1.5em;
-}
-.main-content-right h3 {
-    font-size: 2rem;
-    font-weight: 800;
-   
-}
-/* Css cho sản phẩm */
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    
-}
-.product {
-    border: 1px solid #ddd;
     border-radius: 8px;
-    margin-top: 20px;
-    width: 20%;
-    text-align: center;
-}
-.product p {
-    color: #ee4d2d;
-    font-size: 1.5rem;
-    margin-bottom: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product:hover {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
-img{
-    object-fit: cover;
-    width: 100%;
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn_contact {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
-.product:hover img{
-    transform: rotateY(3.142rad);
-    transition: 0.9s;     
+.btn_contact:hover {
+    background-color: #0056b3;
 }
-.main-sp {
-    margin-top: -280px;
-}
-.active-menu {
-    color: #C49A6C;
-}
+
 /* Css cho footer */
 footer{
     margin-top: 50px;

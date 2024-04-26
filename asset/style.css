@@ -247,7 +247,7 @@ button:hover{
     border-bottom: 0.5px solid #ccc ;
     margin-left:-30px;
 }
-.menu-main ul li:hover 
+.menu-main ul li:hover a 
 {
     color: #C49A6C;
     cursor: pointer;
@@ -267,6 +267,9 @@ font-size: 1.5em;
     font-size: 2rem;
     font-weight: 800;
    
+}
+.active_menu{
+    color: #C49A6C;
 }
 /* Css cho sản phẩm */
 section {
