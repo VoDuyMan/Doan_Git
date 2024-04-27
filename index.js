@@ -50,3 +50,4 @@ btnLeft.addEventListener('click', () => {
     }
     handleEventChangeSlide = setInterval(handleChangeSlide, 4000)
 })
+
