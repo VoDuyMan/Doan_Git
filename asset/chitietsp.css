@@ -210,10 +210,25 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+.detail-right{
+    object-fit: cover;
+    border: 5px solid #C49A6C;
+    width: 600px;
+    margin-left: 200px; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .detail-right img{
     width: 600px;
     min-height: 35vh;
-    margin-left: 300px;
+    
+  
+    transition: 0.5s;
+}
+.detail-right img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .detail-left{
     

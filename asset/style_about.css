@@ -141,19 +141,25 @@ main {
 .about, .founders h2 {
     margin-bottom: 30px;
     font-size: 24px;
+    
 }
 .founder{
     font-size: 26px;
+    border: 5px solid #000;
+    object-fit: cover;
 }
 .founders {
     text-align: center;
     display: flex;
     justify-content: space-around ;
+    
 }
 
 .founder img {
     width: 300px;
     border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
 /*Banner */
 .banner_sp  {
