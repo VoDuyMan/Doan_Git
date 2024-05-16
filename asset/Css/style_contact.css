@@ -175,22 +175,38 @@ button {
 }
 /* Csss liên hệ */
 .container_contacts {
-    max-width: 600px;
-    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 200px;
+    gap: ;
+   
+}
+.map{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.form{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 50px ;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
-
 h1 {
     text-align: center;
     margin-bottom: 20px;
+   
 }
 
 form {
     display: flex;
     flex-direction: column;
+    width: 600px;
 }
 
 label {
