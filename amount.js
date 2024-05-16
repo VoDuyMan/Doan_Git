@@ -4,9 +4,18 @@ let render = (amount) => {
     amountElement.value = amount
 }
 // Handle Plus
+// let handlePlus = () => {
+//     amount++;
+//     render(amount);
+// }
 let handlePlus = () => {
-    amount++;
-    render(amount);
+    let valueInput = document.getElementById('amount2').value
+    valueInput = Number.parseInt(valueInput, "10")
+    valueInput+=1;
+    document.getElementById('amount2').value = valueInput
+    console.log(valueInput)
+    // amount++;
+    // render(amount);
 }
 // Handle Minus
 let handleMinus = () => {

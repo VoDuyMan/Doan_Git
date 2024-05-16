@@ -378,9 +378,19 @@ footer ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity linear 0.5s;
+   display: none;
+}
+.modal.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .modal-container {
     background: #fff;
@@ -489,10 +499,11 @@ h6{
     justify-content: flex-end;
     margin-bottom: 40px;
 }
-.modal:target{
+/* .modal:target{
     visibility: visible;
     opacity: 1;
-}
+} */
+
 .image{
     width: 1000px;
     display: flex;

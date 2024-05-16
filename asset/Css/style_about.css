@@ -179,21 +179,25 @@ main {
 }
 .founder{
     font-size: 26px;
-    border: 5px solid #000;
     object-fit: cover;
 }
 .founders {
     text-align: center;
     display: flex;
-    justify-content: space-around ;
-    
+    justify-content: space-around ;  
 }
-
 .founder img {
     width: 300px;
     border-radius: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
+    border: 5px solid #000;
+    overflow: hidden;
+    object-fit: cover;
+    transition: linear;
+}
+.founder img:hover{
+    transform: scale(1.2);
+    opacity: 0.5s;
 }
 /* Css cho footer */
 footer{

@@ -87,7 +87,7 @@
                   </button>
                   <script src="./amount.js"></script>
             </li>
-            <li><a href="#show-modal"><button class="buy js-buy">Thêm vào giỏ hàng</button></a>
+            <li><button class="btn-add buy js-buy">Thêm vào giỏ hàng</button>
                 
             </li>
             <li>Gọi đặt mua: 0385686633 (Miễn phí, 8-21h cả T7,CN)</li>
@@ -132,12 +132,12 @@ Bộ lông bóng mượt cho cún là mục tiêu theo đuổi của những ng�
 Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lông bóng mượt.
 </p>
 </div>
+
 <div class="modal js-modal" id="show-modal">
-    <div class="modal-container"><a href="#">
+    <div class="modal-container">
         <div class="modal-close js-modal-colse" >
             <i class="ti-close"></i>
         </div>
-    </a>
         <header class="modal-header">
             <i class="ti-check check"></i>
             Sản phẩm vừa được thêm giỏ hàng
@@ -204,7 +204,7 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
             </ul>
         </div>
         <div class="bnts">
-            <button class="btn-cart">Tới giỏ hàng</button>
+            <button class="btn-cart"><a class="btn-cart"href="cart.html">Tới giỏ hàng</a></button>
             <button class="btn-buy">Thanh toán</button>
         </div>
     </div>
@@ -256,14 +256,15 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
         const buyBtn = document.querySelector('.buy')
         const modal = document.querySelector('.js-modal')
         const modalclose = document.querySelector('.js-modal-colse')
+        const btnAdd = document.querySelector('.btn-add')
         function showBuy() {
-            modal.classList.add('show')
+            modal.classList.add('open')
         }
         function closeBuy() {
             modal.classList.remove('open')
         }
         
-        buyBtn.addEventListener('click', showBuy)
+        btnAdd.addEventListener('click', showBuy)
         
         modalclose.addEventListener('click', closeBuy)
     </script>
