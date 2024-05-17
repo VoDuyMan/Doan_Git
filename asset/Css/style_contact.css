@@ -113,28 +113,28 @@ nav {
 }
 .search:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    color: #000;
     cursor: pointer; 
-    transform: rotateY(360deg);
-    transition: 0.8s;
+    background-color: #c9a783;
+    transition: calc(0.5s);   
 }
-button {
+.cart {
     padding: 17px 40px;
     border: 1px solid #ccc;
     border-radius: 8%;
     margin-bottom: 20px;
     font-size: 1.3rem;
     background-color: transparent;
+    background-color: #C49A6C;
 
 }
 .button-cart {
-    color:#C49A6C;;
+    color:#fff;
 }
 .cart:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    cursor: pointer;     
-    transform: rotateY(360deg);
-    transition: 0.8s;     
+    cursor: pointer;    
+    background-color: #c9a783; 
+    transition: calc(0.5s);   
 }
 .active-menu{
     color: #C49A6C;
@@ -197,6 +197,7 @@ button {
     border-radius: 8px;
     
 }
+
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -246,10 +247,10 @@ footer {
     border-top: 1px solid #ccc;
 }
 
-.footer_1 img{
-    
-    width: 200px;
+.footer_1 img{ 
+    width: 310px;
     height: 100px;
+  
 }
 footer h4{
     color: #C49A6C;
@@ -263,9 +264,8 @@ footer ul li a:hover{
     padding: 12px 18px 12px 12px ;
 }
 .button-footer{
-   
     border: none;
-    width: 200px;
+    width: 312px;
     height: 100px;
     object-fit: cover;
     overflow: hidden;
@@ -293,3 +293,63 @@ footer ul li a:hover{
 .banquyen p{
     margin-left: 40px;
 }
+
+.btn_contact {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #c9a783 0%,#C49A6C 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+.btn_contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+.btn_contact:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+.btn_contact span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+.btn_contact svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+.btn_contact .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+.btn_contact:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+.btn_contact:hover svg {
+    transform: rotate(45deg);
+  }
+  
+  

@@ -134,7 +134,7 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
 </div>
 
 <div class="modal js-modal" id="show-modal">
-    <div class="modal-container">
+    <div class="modal-container js-modal-container">
         <div class="modal-close js-modal-colse" >
             <i class="ti-close"></i>
         </div>
@@ -205,7 +205,7 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
         </div>
         <div class="bnts">
             <button class="btn-cart"><a class="btn-cart"href="cart.html">Tới giỏ hàng</a></button>
-            <button class="btn-buy">Thanh toán</button>
+            <a href="thanhtoan.html"></a><button class="btn-buy">Thanh toán</button></a>
         </div>
     </div>
 </div>
@@ -255,6 +255,7 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
     <script>
         const buyBtn = document.querySelector('.buy')
         const modal = document.querySelector('.js-modal')
+        const modalafter = document.querySelector('.js-modal-container')
         const modalclose = document.querySelector('.js-modal-colse')
         const btnAdd = document.querySelector('.btn-add')
         function showBuy() {
@@ -263,10 +264,13 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
         function closeBuy() {
             modal.classList.remove('open')
         }
-        
+        modal.addEventListener('click', closeBuy)
         btnAdd.addEventListener('click', showBuy)
         
         modalclose.addEventListener('click', closeBuy)
+        modalafter.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
     </script>
 </body>
 </html>

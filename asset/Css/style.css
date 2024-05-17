@@ -98,10 +98,8 @@ nav {
 }
 .search:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    color: #000;
     cursor: pointer; 
-    transform: rotateY(360deg);
-    transition: 0.8s;
+    background-color: #c9a783;
 }
 button {
     padding: 17px 40px;
@@ -110,16 +108,18 @@ button {
     margin-bottom: 20px;
     font-size: 1.3rem;
     background-color: transparent;
+    background-color: #C49A6C;
+    
 
 }
 .button-cart {
-    color:#C49A6C;;
+    color: #fff;
 }
 .cart:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    cursor: pointer;     
-    transform: rotateY(360deg);
-    transition: 0.8s;     
+    cursor: pointer; 
+    background-color: #c9a783;    
+    color: #000;   
 }
 /* Css cho danh sách Mneu */
 .container ul{
@@ -299,7 +299,7 @@ img{
     width: 100%;
     cursor: pointer;
 }
-.product img:hover{
+.product:hover img{
     transform: rotateY(3.142rad);
     transition: 0.9s;     
 }
@@ -359,9 +359,8 @@ footer {
 }
 
 .footer_1 img{
-    
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 110px;
 }
 footer h4{
     color: #C49A6C;
@@ -375,9 +374,8 @@ footer ul li a:hover{
     padding: 12px 18px 12px 12px ;
 }
 .button-footer{
-   
     border: none;
-    width: 200px;
+    width: 300px;
     height: 100px;
     object-fit: cover;
     overflow: hidden;

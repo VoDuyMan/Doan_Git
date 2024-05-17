@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    
 }
 ul{
     list-style-type: none;
@@ -86,6 +86,41 @@ nav {
     align-items: centter;
     font-size: 1rem;
 }
+.search{
+    background-color: #C49A6C;
+    border-radius: 50%;
+    border: 0px solid;
+    padding: 30px 30px 27px 35px;
+    margin-top: 8px;
+    margin-left: -55px;
+    font-size: 28px;
+    color:#fff;
+}
+.search:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer; 
+    background-color: #c9a783;
+}
+.cart {
+    padding: 17px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8%;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    background-color: #C49A6C;
+    
+
+}
+.button-cart {
+    color: #fff;
+}
+.cart:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer; 
+    background-color: #c9a783;    
+    color: #000;   
+}
 /* Css cho danh sách Mneu */
 .container ul{
     display: flex;
@@ -100,44 +135,6 @@ nav {
 .container ul li a:hover {
     cursor: pointer;
     color: #c0b523 ;
-}
-.search {
-    background-color: #C49A6C;
-    border-radius: 50%;
-    border: 0px solid;
-    padding: 30px 30px 27px 35px;
-    margin-top: 8px;
-    margin-left: -55px;
-    font-size: 28px;
-    color: #fff;
-}
-.search:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    cursor: pointer; 
-    background-color: #c9a783;
-    transition: calc(0.5s);   
-}
-.cart {
-    padding: 17px 40px;
-    border: 1px solid #ccc;
-    border-radius: 8%;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    background-color: transparent;
-    background-color: #C49A6C;
-
-}
-.button-cart {
-    color:#fff;
-}
-.cart:hover{
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    cursor: pointer;    
-    background-color: #c9a783; 
-    transition: calc(0.5s);   
-}
-.active-menu{
-    color: #C49A6C;
 }
 /* banner */
 .banner_sp  {
@@ -173,39 +170,156 @@ nav {
 .active_b {
     color: #C49A6C;
 }
-/* Content About */
-main {
-    padding: 20px;
-    margin: 0 10px;
+/* Css form  */
+.content-account{
+    margin: 10px 50px;
 }
 
-.about, .founders h2 {
-    margin-bottom: 30px;
-    font-size: 24px;
+/* Csss liên hệ */
+.head{
+    display: block;
+}
+.container_contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 200px;
+   
+}
+.map{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+.head {
+    display: block;
+    margin-left: 65px;
+}
+.form{
+    
+    max-width: 100%;
+    margin: 50px ;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
     
 }
-.founder{
-    font-size: 26px;
-    object-fit: cover;
+h1 {
+   font-size: 3rem;
+    margin-bottom: 10px;
 }
-.founders {
-    text-align: center;
+p{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+form {
     display: flex;
-    justify-content: space-around ;  
+    flex-direction: column;
+    
 }
-.founder img {
-    width: 300px;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border: 5px solid #000;
-    overflow: hidden;
-    object-fit: cover;
-    transition: linear;
+.form-comment{
+    display: flex;
+    justify-content: first baseline;
 }
-.founder img:hover{
-    transform: scale(1.2);
-    opacity: 0.5s;
+label {
+    font-weight: bold;
+    margin-bottom: 30px;
 }
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 700px;
+    min-height: 30px;
+    font-size: 1.25rem;
+}
+.btn_contact {
+    padding: 10px 20px;
+    background-color: #C49A6C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 65px;
+}
+.btn_contact:hover {
+    background-color: #cb8840;
+}
+.btn_contact {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #c9a783 0%,#C49A6C 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+.btn_contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+.btn_contact:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+.btn_contact span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+    font-size: 1.4rem;
+  }
+  
+.btn_contact svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+.btn_contact .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+.btn_contact:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+.btn_contact:hover svg {
+    transform: rotate(45deg);
+  }
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.btns a{
+    text-decoration: underline;
+    color: #ccc;
+}
+.btns a:hover {
+    color: #C49A6C;
+    cursor: pointer;
+}
+
 /* Css cho footer */
 footer{
     margin-top: 50px;

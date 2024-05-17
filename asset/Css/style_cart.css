@@ -113,10 +113,9 @@ nav {
 }
 .search:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    color: #000;
     cursor: pointer; 
-    transform: rotateY(360deg);
-    transition: 0.8s;
+    background-color: #c9a783;
+    transition: calc(0.5s);   
 }
 button {
     padding: 17px 40px;
@@ -125,6 +124,7 @@ button {
     margin-bottom: 20px;
     font-size: 1.3rem;
     background-color: transparent;
+    background-color: #C49A6C;
 
 }
 .button-cart {
@@ -132,9 +132,9 @@ button {
 }
 .cart:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    cursor: pointer;     
-    transform: rotateY(360deg);
-    transition: 0.8s;     
+    cursor: pointer;    
+    background-color: #c9a783; 
+    transition: calc(0.5s);   
 }
 .active-menu{
     color: #C49A6C;

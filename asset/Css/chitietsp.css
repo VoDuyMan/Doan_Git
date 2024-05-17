@@ -115,6 +115,12 @@ nav {
     font-size: 28px;
     color: #fff;
 }
+.search:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer; 
+    background-color: #c9a783;
+    transition: calc(0.5s);   
+}
 .button-cart {
     padding: 17px 40px;
     border: 1px solid #ccc;
@@ -122,16 +128,17 @@ nav {
     margin-bottom: 20px;
     font-size: 1.3rem;
     background-color: transparent;
+    background-color: #C49A6C;
 
 }
 .button-cart {
-    color:#C49A6C;;
+    color: #fff;
 }
 .button-cart:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    cursor: pointer;     
-    transform: rotateY(360deg);
-    transition: 0.8s;     
+    cursor: pointer;    
+    background-color: #c9a783; 
+    transition: calc(0.5s);   
 }
 .active-menu{
     color: #C49A6C;
@@ -397,6 +404,7 @@ footer ul li a:hover{
     min-height: 200px;
     width: 70%;
     position: relative;
+    animation: modalFadeIn ease 0.6s;
 }
 .modal img{
     width: 10%;
@@ -464,9 +472,19 @@ h6{
     transform: translateY(-20%);
     margin-left: 40px;
 }
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .btn-cart{
     width: 15%;
-    background: #b7b7b7;
+    background-color: #ccc;
     font-size: 26px;
     font-weight: 700;
     min-height: 60px;
@@ -477,6 +495,7 @@ h6{
 .btn-cart:hover{
     background: #cf8638;
     cursor: pointer;
+    color: #fff;
 }
 .btn-buy{
     width: 20%;
