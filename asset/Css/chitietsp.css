@@ -196,7 +196,7 @@ nav {
 .soluong button svg{
     color: #909090;
 }
-.soluong button:hover svg{
+.soluong:hover svg{
     color: #4f4f4f;
 }
 .soluong #amount{
@@ -484,13 +484,13 @@ h6{
 }
 .btn-cart{
     width: 15%;
-    background-color: #ccc;
+  
     font-size: 26px;
     font-weight: 700;
     min-height: 60px;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #3b3232;
 }
 .btn-cart:hover{
     background: #cf8638;
@@ -505,9 +505,9 @@ h6{
     min-height: 60px;
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: #fff !important;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 30px;
 }
 .btn-buy:hover{
     background: #cf8638;

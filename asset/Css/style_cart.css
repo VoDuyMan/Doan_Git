@@ -117,7 +117,7 @@ nav {
     background-color: #c9a783;
     transition: calc(0.5s);   
 }
-button {
+.button-cart {
     padding: 17px 40px;
     border: 1px solid #ccc;
     border-radius: 8%;
@@ -125,16 +125,17 @@ button {
     font-size: 1.3rem;
     background-color: transparent;
     background-color: #C49A6C;
+    
 
 }
 .button-cart {
-    color:#C49A6C;;
+    color: #fff;
 }
-.cart:hover{
+.button-cart:hover{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    cursor: pointer;    
-    background-color: #c9a783; 
-    transition: calc(0.5s);   
+    cursor: pointer; 
+    background-color: #c9a783;    
+    color: #fff;   
 }
 .active-menu{
     color: #C49A6C;
@@ -267,9 +268,9 @@ h6{
     transform: translateY(-20%);
     margin-left: 40px;
 }
-.btn-cart{
+.btn-cart {
     width: 15%;
-    background: #b7b7b7;
+    background: #C49A6C;
     font-size: 26px;
     font-weight: 700;
     min-height: 60px;
@@ -277,8 +278,9 @@ h6{
     border-radius: 5px;
     color: #fff;
 }
+
 .btn-cart:hover{
-    background: #cf8638;
+    background: #c9a783;
     cursor: pointer;
 }
 .btn-buy{
@@ -360,7 +362,7 @@ footer {
 
 .footer_1 img{
     
-    width: 200px;
+    width: 300px;
     height: 100px;
 }
 footer h4{
@@ -377,7 +379,7 @@ footer ul li a:hover{
 .button-footer{
    
     border: none;
-    width: 200px;
+    width: 300px;
     height: 100px;
     object-fit: cover;
     overflow: hidden;

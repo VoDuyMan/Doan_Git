@@ -29,7 +29,7 @@
             <li>
                 <a href="">
                     <button class="button-cart">
-                        <i style="font-size: 2.5rem;" class="ti-shopping-cart "></i>
+                        <i style="font-size: 2.5rem;" class="ti-shopping-cart cart "></i>
                     </button>
                 </a>
             </li>
@@ -80,20 +80,9 @@
                 </div>
                
                 <div class="soluong modal-soluong">
-                    <button class="btn-minus" onclick="handleMinus()"> -
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-                        </svg>
-                    </button>
+                   
                     <input type="text" id="amount" name="amount" value="1">
-                    <button class="btn-plus" onclick="handlePlus(event)"> +
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                        </svg>
-                    </button>
-                    <script src="./amount.js"></script>
+                    
                 </div>
                 <h5>$100</h5>
                 
@@ -110,21 +99,8 @@
                             <a href="">Bát Ăn Cho Chó Bát Ăn Cho Chó Bát Cơm Poodle</a>
                     </div>
                 </div>
-                <div class="soluong modal-soluong">
-                    <button class="btn-minus" onclick="handleMinus()"> -
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
-                        </svg>
-                    </button>
-                    <input type="text" id="amount2" name="amount" value="1">
-                    <button class="btn-plus" onclick="handlePlus()"> +
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                        </svg>
-                    </button>
-                    <script src="./amount.js"></script>
+                <div class="soluong modal-soluong"> 
+                    <input type="text" id="amount" name="amount" value="1">
                 </div>
                 <h5>$150</h5>
             </div>
@@ -135,13 +111,16 @@
                     <li style="font-size: 30px; color: #f7941d;font-weight: 700;">$100</li>
                 </ul>
             </div>
+            <div class="bnts">
+                <button class="btn-buy"><a href="thanhtoan.html">Thanh toán</a></button>
+            </div>
         </div>
     </div>
     <!-- footer  -->
     <footer>
         <div class="footer_1">
             <ul>
-                <li><button class="button-footer"><img src="./asset/Css/button.png" alt=""></button></li>
+                <li><button class="button-footer"><img src="./img/logo_Shop.png" alt=""></button></li>
                 <li>Trụ sở chính: DNC University, Phong Điền, Cần Thơ, Vietnam</li>
                 <li class="call"><a href="tel:+84 899022913">Hotline: 0899022913</a></li>
                 <li><a href="mailto:voduyman2111@gmail.com">Email: voduyman2111@gmail.com</a></li>
