@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="OderLoadControl.ascx.cs" Inherits="UserAdmin_cms_admin_account_ManageOrder_OderLoadControl" %>
+<asp:PlaceHolder ID="plTaiKhoanLoadControl" runat="server"></asp:PlaceHolder>

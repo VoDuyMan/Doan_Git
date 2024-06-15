@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<style>
+    .nav-banner {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .slide-show {
+        width: 90% ;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .list-img{
+        display: flex;
+        transition: 0.5s;
+    }
+    .btn:hover {
+        color: white;
+        cursor: pointer;
+    }
+    .btn {
+        font-size: 40px;
+        color: #999;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .btn-left {
+        left: 0;
+    }
+    .btn-right {
+        right: 0;
+    }
+    .index-img{
+        position: absolute;
+        bottom: 70px;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    .index-item{
+        border: 2px solid #999;
+        padding: 10px;
+        margin: 3px;
+        border-radius: 50%;
+    }
+    .active{
+        background-color: #999;
+    }
+    .content-banner{
+        background-color: aqua;
+        position: absolute;
+        bottom: -250px;
+        width: 70%;
+        min-height: 40%;
+    }
+    .full-banner{
+        min-height: 50%;
+        position: relative;
+        display:flex;
+        justify-content: center;
+    }
+    .content-banner ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+</style>
+
+<body>
+    <div class="full-banner">
+
+        <div class="nav-banner">
+    
+            <div class="slide-show">
+                <div class="list-img">
+                    <img src="./img/banner_1.png" alt="">
+                    <img src="./img/banner_2.png" alt="">
+                    <img src="./img/banner_3.png" alt="">
+                </div>
+                <div class="btns">
+                    <div class="btn-left btn"><i class="ti-angle-left"></i></div>
+                    <div class="btn-right btn"><i class="ti-angle-right"></i></div>
+                </div>
+                <div class="index-img">
+                    <div class="index-item index-item-0 active"></div>
+                    <div class="index-item index-item-1"></div>
+                    <div class="index-item index-item-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="content-banner">
+            <ul>
+                <li class="coment-1">
+                    <i class="ti-star"></i>
+                    <h2>Sản phẩm độc đáo, sáng tạo</h2>
+                    <p>----------------------</p>
+                    <p>Các sản phẩm được thiết kế và sản xuất độc quyền bởi Poodle pet Shop</p>
+                </li>
+                <li class="coment-2">
+                    <i class="ti-star"></i>
+                    <h2>Sản phẩm độc đáo, sáng tạo</h2>
+                    <p>----------------------</p>
+                    <p>Các sản phẩm được thiết kế và sản xuất độc quyền bởi Poodle pet Shop</p>
+                </li>
+                <li class="coment-3">
+                    <i class="ti-star"></i>
+                    <h2>Sản phẩm độc đáo, sáng tạo</h2>
+                    <p>----------------------</p>
+                    <p>Các sản phẩm được thiết kế và sản xuất độc quyền bởi Poodle pet Shop</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

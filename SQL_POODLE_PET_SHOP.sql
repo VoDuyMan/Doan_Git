@@ -110,6 +110,23 @@ CREATE TABLE [Order_Details] (
 )
 GO
 
+CREATE TABLE OrderDetails (
+    id INT PRIMARY KEY IDENTITY,
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    -- Các cột khác nếu cần
+    FOREIGN KEY (order_id) REFERENCES Orders(id),
+    FOREIGN KEY (product_id) REFERENCES Product(id)
+);
+
+  ALTER TABLE dbo.Detail_Order
+ADD user_id INT NULL;
+ALTER TABLE dbo.Detail_Order
+ADD CONSTRAINT FK_Detail_Order_User
+FOREIGN KEY (user_id) 
+REFERENCES dbo.Users(id);
+
 ALTER TABLE [User] ADD FOREIGN KEY ([role_id]) REFERENCES [Role] ([id])
 GO
 
@@ -136,6 +153,39 @@ GO
 
 ALTER TABLE [Product] ADD FOREIGN KEY ([options_id]) REFERENCES [Options] ([id])
 GO
+
+ALTER TABLE Order_Details
+ADD user_id int;
+
+ALTER TABLE Order_Details
+ADD CONSTRAINT FK_OrderDetails_Users
+FOREIGN KEY (user_id) REFERENCES [User](id);
+
+ALTER TABLE Order_Details
+ADD TotalPrice int;
+ALTER TABLE Order_Details
+ALTER COLUMN TotalPrice decimal(18, 2);
+
+ALTER TABLE Feedback
+ALTER COLUMN note nvarchar(1000);
+
+ALTER TABLE [User]
+ADD thumbnail varchar(10);
+
+ALTER TABLE [User]
+ALTER COLUMN thumbnail varchar(500);
+
+ALTER TABLE [FeedBack]
+Add user_id int;
+
+ALTER TABLE [FeedBack] ADD FOREIGN KEY ([user_id]) REFERENCES [User] ([id])
+GO
+
+ALTER TABLE [Product]
+Add number int;
+
+EXEC sp_rename 'Product.deleted', 'inventory', 'COLUMN';
+
 
 INSERT INTO Category 
 VALUES (N'TRANG CHỦ', '1'),

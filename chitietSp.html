@@ -74,21 +74,28 @@
          
                     Số lượng:            
                 
-                <button class="btn-minus btn-mus" onclick="handleMinus()">
+                <!-- <button class="btn-minus btn-mus" onclick="handleMinus()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14" />
                   </svg>
-                  </button>
-                <input type="text" id="amount" name="amount" value="1">
-                <button class="btn-plus" onclick="handlePlus()">
+                  </button> -->
+                <input type="number" id="amount" name="amount" value="1" min="1">
+                <!-- <button class="btn-plus" onclick="handlePlus()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                   </svg>
                   </button>
                   <script src="./amount.js"></script>
+                  -->
             </li>
-            <li><button class="btn-add buy js-buy">Thêm vào giỏ hàng</button>
+            <li>
+                <!-- <button class="btn-add buy js-buy">Thêm vào giỏ hàng</button> -->
+                <div class="bnts">
+                    <button class="btn-cart"><a class="btn-cart"href="cart.html">Tới giỏ hàng</a></button>
+                    <button class="btn-buy"><a href="thanhtoan.html">Thanh toán</a></button>
+                </div>
                 
+             
             </li>
             <li>Gọi đặt mua: 0385686633 (Miễn phí, 8-21h cả T7,CN)</li>
         </ul>
@@ -133,16 +140,18 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
 </p>
 </div>
 
-<div class="modal js-modal" id="show-modal">
+<!-- <div class="modal js-modal" id="show-modal">
+    <a href="#" class="close"></a>  
     <div class="modal-container js-modal-container">
         <div class="modal-close js-modal-colse" >
+            <a href="#" class="close"></a>  
             <i class="ti-close"></i>
         </div>
         <header class="modal-header">
             <i class="ti-check check"></i>
             Sản phẩm vừa được thêm giỏ hàng
         </header>
-        <!-- Sản phẩm 1 -->
+     
         <div class="modal-body">
             <div class="name-product">
                 <div class="image">
@@ -165,12 +174,9 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
                 <li style="font-size: 30px; color: #f7941d;font-weight: 700;">$100</li>
             </ul>
         </div>
-        <div class="bnts">
-            <button class="btn-cart"><a class="btn-cart"href="cart.html">Tới giỏ hàng</a></button>
-            <button class="btn-buy"><a href="thanhtoan.html">Thanh toán</a></button>
-        </div>
+        
     </div>
-</div>
+</div> -->
 
 
     <footer>
@@ -214,25 +220,6 @@ Cá hồi chứa axit béo không bão hòa Ω3, bổ sung dinh dưỡng cho lô
         </ul>
     </div>
 </footer>
-    <script>
-        const buyBtn = document.querySelector('.buy')
-        const modal = document.querySelector('.js-modal')
-        const modalafter = document.querySelector('.js-modal-container')
-        const modalclose = document.querySelector('.js-modal-colse')
-        const btnAdd = document.querySelector('.btn-add')
-        function showBuy() {
-            modal.classList.add('open')
-        }
-        function closeBuy() {
-            modal.classList.remove('open')
-        }
-        modal.addEventListener('click', closeBuy)
-        btnAdd.addEventListener('click', showBuy)
-        
-        modalclose.addEventListener('click', closeBuy)
-        modalafter.addEventListener('click', function(event){
-            event.stopPropagation()
-        })
-    </script>
+ 
 </body>
 </html>

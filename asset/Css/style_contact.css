@@ -195,19 +195,14 @@ nav {
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
+    display: grid;
     
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-   
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
+   width: 500px;
 }
 
 label {

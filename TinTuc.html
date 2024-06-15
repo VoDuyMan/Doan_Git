@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="icon"
+    sizes="70x70"
+    href="./img/icon.png"
+/>
+    <title>Trang sản phẩm</title>
+    
+    <link rel="stylesheet" href="./asset/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <style>
+        body {
+            font-family:  "Product Sans";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color:#000;
+        }
+        img {
+            object-fit: cover;
+        }
+        nav img {
+        width: 300px;
+        }
+        header {
+            padding: 16px;
+        }
+        /* .background-header{
+            padding-bottom: 10px;
+            background-color: #C49A6C;
+        } */
+        nav a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            line-height: 100%;
+        }
+        
+        nav a img {
+            width: 400px;
+            margin-top: 1px;
+        }
+        nav li:hover a{
+            color: #c0b523 ;
+            cursor: pointer;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        ul li{
+            padding: 20px 24px;
+           
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 5px;
+            margin-top: -25px;
+        }
+        .subnav li{
+            padding: 20px 24px;
+            font-size: 1.5rem;
+        }
+        .subnav li:hover{
+            color: #c0b523;
+            cursor: pointer;
+            border-radius: 5%;
+        }
+        .search-container {
+            position: relative;
+            display: inline-block;
+            margin: 40px 0;
+        }
+        .nav-search{
+         
+            padding-left: 0px;
+            font-weight: 700px;
+        }
+        .search-input {
+            padding: 10px;
+            height:50px;
+            width: 600px;
+            border: 3px solid #C49A6C;;
+            border-radius: 10px;
+            outline: none;
+            display: flex;
+            align-items: centter;
+            font-size: 1rem;
+        }
+        /* Css cho danh sách Mneu */
+        .container ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 0 500px;
+            margin-top: -30px;
+        }
+        .container ul li {
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+        .container ul li a:hover {
+            cursor: pointer;
+            color: #c0b523 ;
+        }
+        .search {
+            background-color: #C49A6C;
+            border-radius: 50%;
+            border: 0px solid;
+            padding: 30px 30px 27px 35px;
+            margin-top: 8px;
+            margin-left: -55px;
+            font-size: 28px;
+            color: #fff;
+        }
+        .search:hover{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            cursor: pointer; 
+            background-color: #c9a783;
+            transition: calc(0.5s);   
+        }
+        button {
+            padding: 17px 40px;
+            border: 1px solid #ccc;
+            border-radius: 8%;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            background-color: transparent;
+            background-color: #C49A6C;
+        
+        }
+        .button-cart {
+            color:#fff;
+        }
+        .cart:hover{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            cursor: pointer;    
+            background-color: #c9a783; 
+            transition: calc(0.5s);   
+        }
+        /* Css baner trang SP */
+        .banner_sp  {
+            margin-top: 18px;
+            width: 100%;
+            min-height: 300px;
+            background-size: cover;
+            background-image: url(./img/banner_sanpham.jpg);
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .banner_sp h3 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: -22px;
+        }
+        
+        .banner_sp ul li a {
+            font-size: 26px;
+            color: #fff;
+           
+        }
+        .banner_sp ul li a:hover{
+            color: #C49A6C;
+        }
+        .ti-angle-right {
+            font-size: 1rem;
+            color: #fff;
+           
+        }
+        .active_b {
+            color: #C49A6C;
+        }
+        .list_dmsp {
+            background-color: #fff;
+        }
+        .content-dmsp{
+            display: flex;
+            justify-content: center;
+            border: 0px solid #000;
+            width: 1716px;
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+            margin-left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+            margin-top: -70px;
+            background-color: #fff;
+            border-radius: 1%;
+        }
+        .content-dmsp ul {
+            padding: 0px 50px 0 50px;
+            border-right: 1px solid #ccc;
+        }
+        
+        .content-dmsp ul li{
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+        
+        }
+        .content-dmsp ul li img {
+            width: 90px;
+            height: 100%;
+        }
+        .content-dmsp ul li a{
+            font-size: 20px;
+        }
+        .content-dmsp ul li:hover a{
+            color: #C49A6C;
+        }
+        .content-dmsp ul:hover  img{
+            transform: rotateY(3.142rad);
+            transition: 0.5s;   
+            transition: all 400ms ease;
+            -webkit-transition: all 400ms ease;
+        }
+        /* Css cho footer */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    font-size: 1.5rem;
+    padding-bottom: 150px;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+}
+
+.footer_1 img{
+    
+    width: 300px;
+    height: 100px;
+}
+footer h4{
+    color: #C49A6C;
+}
+footer ul li a:hover{
+    color: #C49A6C;
+
+}
+.footer_4 input{
+    border: 1px solid #000;
+    padding: 12px 18px 12px 12px ;
+}
+.button-footer{
+   
+    border: none;
+    width: 300px;
+    height: 90px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.button-footer:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.icons{
+    margin-left: -55px;
+    display: flex;
+}
+.banquyen{
+    color: #c9a783;
+    font-size: 18px;
+    font-weight: 700;
+    /* height: 50px; */
+    /* padding: 1px 0; */
+    margin-bottom: 1px;
+} 
+.banquyen p{
+    margin-left: 40px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <header>
+            <a href=""><img class="logo-shop" src="./img/logo_Shop.png" alt=""></a>  
+        </header>
+        <ul>
+            <li>
+                <input type="text" class="search-input" placeholder="Tìm kiếm gì cho hôm nay....">
+            </li>
+            <li class="nav-search"><a href=""><button class="search"><i class=" ti-search" ></i></button></a></li>
+        </ul>
+
+    <ul class="subnav">
+            <li><a href=""></a>Đăng nhập</li>
+            <li> | </li>
+            <li><a href=""></a>Đăng ký</li>
+            <li>
+                <a href="cart.html">
+                    <button class="cart">
+                        <i style="font-size: 2.5rem;"class="ti-shopping-cart button-cart" ></i>
+                    </button>
+                </a>
+            </li>
+    </ul>
+</nav>
+<div class="container">
+    <ul>
+    <li><a href="index.html">TRANG CHỦ</a></li>
+    <li>
+        <a class="active-menu" href="sanpham.html">SẢN PHẨM</a></i>
+    </li>
+    <li><a href="khuyenmai.html">KHUYẾN MÃI</a></li>
+    <li><a href="">POODLE SHOP</a></li>
+    <li><a href="">LIÊN HỆ</a></li>
+    </ul>
+</div>
+</div>
+<div>
+    <div class="banner_sp">
+        <ul>
+            <li><H3>Trang sản phẩm</H3></li>
+            
+            <li><a href="index.html">Trang chủ </a><i class="ti-angle-right"></i><a  href="sanpham.html" style="color: #C49A6C;"> Sản phẩm</a></li>
+        </ul>
+    </div>
+    <!-- Thêm nội dung bài viết vào đây nha đại ca-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="footer_2">
+        <ul>
+            <li><h4>VỀ CHÚNG TÔI</h4></li>
+            <li><a href="">SHOP CHO CÚN</a>
+            <li><a href="">KHUYẾN MÃI</a></li>
+            <li><a href="">POODLE SHOP</a></li>
+            <li><a href="">TIN TỨC</a></li>
+        </ul>
+    </div>
+    <div class="footer_3">
+        <ul>
+            <li><h4>TIN KHUYẾN MÃI</h4></li>
+            <li><a href="">SHOP CHO CÚN</a></li>
+            <li><a href="">KHUYẾN MÃI</a></li>
+            <li><a href="">POODLE SHOP</a></li>
+            <li><a href="">TIN TỨC</a></li>
+    </div>
+    <div class="footer_4">
+        <ul>
+            <li><h4>LIÊN HỆ</h4></li>
+            <li class="call"><a href="tel:+84 899022913">Hotline:0899022913 </a></li>
+            <li><a href="mailto:voduyman21112003@gmail.com"></a>Email: <input type="text"></li>
+            <li>
+                <ul class="icons">
+                    <li><a href=""><i class="ti-facebook"></i></a></li>
+                    <li><a href=""><i class="ti-youtube"></i></a></li>
+                    <li><a href=""><i class="ti-reddit"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

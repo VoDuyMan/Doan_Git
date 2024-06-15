@@ -1,0 +1,198 @@
+﻿body {
+    font: normal 18px Arial;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    padding: 0 20px;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Class phôt biến*/
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.cb{
+    clear:both;
+}
+/* Phần Header */
+
+#header{
+    height: 80px;
+    overflow: hidden;
+}
+#header .logo{
+    float: left;
+    line-height: 80px;
+}
+#header .accountMenu{
+    float: right;
+    line-height: 80px;
+}
+
+/* Phần Menu Chính*/
+
+.MenuChinh {
+    background: #C49A6C;
+}
+.MenuChinh ul,
+.MenuChinh li{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.MenuChinh li{
+    display: inline-block;
+}
+.MenuChinh li a{
+    display: inline-block;
+    padding: 10px 15px;
+    color:#fff;
+    font-weight: bold;
+}
+.MenuChinh li a:hover{
+    background: #C49A55;
+
+}
+
+/* Css trang admin*/
+.column_Left{
+    float: left;
+    width:20%;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+}
+.column_Right{
+    float: right;
+    width:80%;
+}
+
+/*Css cho menu quản lí trái*/
+.column_Left .head {
+    background: #f9f9f9;
+    padding: 10px;
+    font-weight: bold;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.column_Left .head:first-child{
+    border-top:none;
+}
+.column_Left ul li{
+    padding: 5px 0;
+}
+.column_Left ul li a:hover{
+    color:#C49A6C;
+    cursor:pointer;
+}
+/* Css cho xử lí thông tin phải*/
+.column_Right{
+    border:1px solid #ccc;
+    height:570px;
+ 
+}
+.column_Right .head {
+    background: #f9f9f9;
+    padding: 10px;
+    font-weight: bold;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+    .column_Right .head:first-child {
+        border-top: none;
+    }
+/* Css cho khung thêm mới */
+.FormAdd{
+    padding:10px;
+    font-size:16px;
+}
+.thongTin{
+    overflow:hidden;
+    padding-bottom:10px;
+}
+.tenTruong{
+    float: left;
+    width:150px;
+}
+.oNhap{
+    float:left;
+    
+}
+.FormAdd .input{
+    border: 1px solid #ccc;
+    padding:10px;
+    width:420px;
+}
+.FormAdd .btnThemMoi {
+    border: none;
+    background-color: #C49A6C;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 14px;
+    font-weight: bold;
+}
+.FormAdd .btnHuy {
+    border: none;
+    background-color: #bbb;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 14px;
+    font-weight: bold;
+    margin-left: 10px; 
+}
+.FormAdd .btnThemMoi:hover {
+    background-color: #cf8638;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.FormAdd .btnHuy:hover {
+    background-color: #cf8638;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*Css trang hiển thị*/
+.KhungChua{
+    padding:10px;
+}
+table .tbDanhSach{
+    width: 100%;
+    border-collapse:collapse;
+    border: 1px solid #dfdfdf;
+}
+table .tbDanhSach th,
+table .tbDanhSach td{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+}
+a:hover{
+    opacity:0.8;
+}

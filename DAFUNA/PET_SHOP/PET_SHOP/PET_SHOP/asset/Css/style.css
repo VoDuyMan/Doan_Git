@@ -1,0 +1,415 @@
+    * {
+    color: #000;
+}
+body {
+    font-family: "Product Sans" !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+    color:#000 !important;
+
+}
+img {
+    object-fit: cover;
+}
+
+nav img {
+width: 300px;
+}
+header {
+    padding: 16px;
+}
+/* .background-header{
+    padding-bottom: 10px;
+    background-color: #C49A6C;
+} */
+nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+nav a img {
+    width: 400px;
+    margin-top: 1px;
+}
+nav li:hover a{
+    color: #c0b523 ;
+    cursor: pointer;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul li{
+    padding: 20px 24px;
+   
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+    margin-top: -25px;
+}
+.subnav li{
+    padding: 20px 24px;
+    font-size: 1.5rem;
+}
+.subnav li:hover a{
+    color: #c0b523 !important;
+    cursor: pointer;
+    border-radius: 5%;
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin: 40px 0;
+}
+.nav-search{
+ 
+    padding-left: 0px;
+    font-weight: 700px;
+}
+.search-input {
+    padding: 10px;
+    height:50px;
+    width: 600px;
+    border: 3px solid #C49A6C;;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    align-items: centter;
+    font-size: 1rem;
+}
+.search{
+    background-color: #C49A6C;
+    border-radius: 50%;
+    border: 0px solid;
+    padding: 30px 30px 27px 35px;
+    margin-top: 8px;
+    margin-left: -55px;
+    font-size: 28px;
+    color:#fff;
+}
+.search:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer; 
+    background-color: #c9a783;
+}
+button {
+    padding: 17px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8%;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    background-color: #C49A6C;
+    
+
+}
+.button-cart {
+    color: #fff;
+}
+.cart:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer; 
+    background-color: #c9a783;    
+    color: #000;   
+}
+/* Css cho danh sách Mneu */
+.container ul{
+    display: flex;
+    justify-content: space-around;
+}
+.container ul li {
+    padding: 0 20px;
+    font-size: 1.5rem;
+}
+.container ul li a:hover {
+    cursor: pointer;
+    color: #c0b523 !important;
+}
+
+
+ /* banner của trang web */
+ .nav-banner {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.slide-show {
+    width: 90% ;
+    overflow: hidden;
+    position: relative;
+}
+.list-img{
+    display: flex;
+    transition: 0.5s;
+}
+.btn:hover {
+    color: white;
+    cursor: pointer;
+}
+.btn {
+    font-size: 40px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-left {
+    left: 0;
+}
+.btn-right {
+    right: 0;
+}
+.index-img{
+    position: absolute;
+    bottom: 90px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-25%);
+}
+.index-item{
+    border: 2px solid #999;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 30%;
+}
+.active{
+    background-color: #999;
+}
+.content-banner {
+    background-color: #fff;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: -90px;
+    z-index: 9;
+}
+.content-banner ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.content-banner ul li:hover .icon-baner {
+    transform: rotateY(360deg);
+    transition: 0.8s;
+}
+.full-banner{
+    min-height: 500px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.content-banner ul li{
+    margin: 0 20px;
+    width: 600px;
+    font-size: 20px;
+}
+.icon-baner{
+    font-size: 40px;
+    cursor: pointer;
+    color:rgb(211, 205, 36);
+    margin: 0 8px;
+}
+
+/* Css cho phần main */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.main-content-left{
+   
+    margin-left: 15px;
+    border-radius: 4%;
+}
+.main-content-right{
+    width: 70%;
+    margin-top: 6px;
+}
+.menu-main ul li {
+    font-size: 1.5em;
+    border-bottom: 0.5px solid #ccc ;
+    margin-left:-30px;
+}
+.menu-main ul li:hover a 
+{
+    color: #C49A6C !important; 
+    cursor: pointer;
+} 
+.menu-main{
+    margin-bottom: 26px;
+}
+.menu-main p{
+padding: 8px;
+color: #fff;
+background-color: #C49A6C;
+font-weight: 800;
+padding-left: 20px;
+font-size: 1.5em;
+}
+.main-content-right h3 {
+    font-size: 2rem;
+    font-weight: 800;
+   
+}
+.active_menu{
+    color: #C49A6C !important;  
+}
+/* Css cho sản phẩm */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 21%;
+    text-align: center;
+}
+.product p {
+    color: #ee4d2d;
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+.product:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+}
+.product:hover img{
+    transform: rotateY(3.142rad);
+    transition: 0.9s;     
+}
+
+.baner-mid ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: absolute;
+}
+.baner-mid img{
+   object-fit: cover;
+   
+}
+.baner-mid img:hover {
+    zoom: 1.1;
+    
+}
+/* Css cho tin tức */
+.main-news {
+    margin-top: 400px;
+}
+.news-product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  
+    width: 30%;
+    text-align: center;
+    margin: 0 16px;
+    HEIGHT: 500PX; 
+    text-align:  left;
+    padding-left:10px;
+}
+.news-product p{
+    color: #000;
+    margin-top:20px
+}
+.news-product img {
+    height: 70%;
+}
+.list-news{
+    display: flex;
+    justify-content: center;
+}
+.main-news h3 {
+    text-align: center;
+    margin-left: 100px;
+    font-size: 2rem;
+    margin: 40px;
+}
+/* Css cho footer */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    font-size: 1.5rem;
+    padding-bottom: 150px;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+}
+
+.footer_1 img{
+    width: 300px;
+    height: 110px;
+}
+footer h4{
+    color: #C49A6C;
+}
+footer ul li a:hover{
+    color: #C49A6C !important;
+
+}
+.footer_4 input{
+    border: 1px solid #000;
+    padding: 12px 18px 12px 12px ;
+}
+.button-footer{
+    border: none;
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.button-footer:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.icons{
+    margin-left: -55px;
+    display: flex;
+}
+.banquyen{
+    color: #c9a783;
+    font-size: 18px;
+    font-weight: 700;
+    /* height: 50px; */
+    /* padding: 1px 0; */
+    margin-bottom: 1px;
+} 
+.banquyen p{
+    margin-left: 40px;
+}

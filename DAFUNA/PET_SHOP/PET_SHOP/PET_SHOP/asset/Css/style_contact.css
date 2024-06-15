@@ -1,0 +1,346 @@
+body {
+    font-family:  "Product Sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+img {
+    object-fit: cover;
+}
+nav img {
+width: 300px;
+}
+header {
+    padding: 16px;
+}
+/* .background-header{
+    padding-bottom: 10px;
+    background-color: #C49A6C;
+} */
+nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+nav a img {
+    width: 400px;
+    margin-top: 1px;
+}
+nav li:hover a{
+    color: #c0b523 ;
+    cursor: pointer;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul li{
+    padding: 20px 24px;
+   
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px;
+    margin-top: -25px;
+}
+.subnav li{
+    padding: 20px 24px;
+    font-size: 1.5rem;
+}
+.subnav li:hover{
+    color: #c0b523;
+    cursor: pointer;
+    border-radius: 5%;
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin: 40px 0;
+}
+.nav-search{
+ 
+    padding-left: 0px;
+    font-weight: 700px;
+}
+.search-input {
+    padding: 10px;
+    height:50px;
+    width: 600px;
+    border: 3px solid #C49A6C;;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    align-items: centter;
+    font-size: 1rem;
+}
+/* Css cho danh sách Mneu */
+
+.container ul li a:hover {
+    cursor: pointer;
+    color: #c0b523 ;
+}
+.search {
+    background-color: #C49A6C;
+    border-radius: 50%;
+    border: 0px solid;
+    padding: 30px 30px 27px 35px;
+    margin-top: 8px;
+    margin-left: -55px;
+    font-size: 28px;
+    color: #fff;
+}
+.search:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer; 
+    background-color: #c9a783;
+    transition: calc(0.5s);   
+}
+.cart {
+    padding: 17px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8%;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    background-color: transparent;
+    background-color: #C49A6C;
+
+}
+.button-cart {
+    color:#fff;
+}
+.cart:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;    
+    background-color: #c9a783; 
+    transition: calc(0.5s);   
+}
+.active-menu{
+    color: #C49A6C;
+}
+    /*Banner */
+.banner_sp  {
+    margin-top: 18px;
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    background-image: url(./banner_sanpham.jpg);
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.banner_sp h3 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: -22px;
+}
+
+.banner_sp ul li a {
+    font-size: 26px;
+    color: #fff;
+
+}
+.banner_sp ul li a:hover{
+    color: #C49A6C;
+}
+.ti-angle-right {
+    font-size: 1rem;
+    color: #fff;
+
+}
+.active_b {
+    color: #C49A6C;
+}
+/* Csss liên hệ */
+.container_contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 200px;
+    gap: ;
+   
+}
+.map{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.form{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 50px ;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: grid;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+   width: 500px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn_contact {
+    padding: 10px 20px;
+    background-color: #C49A6C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn_contact:hover {
+    background-color: #cb8840;
+}
+
+/* Css cho footer */
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    font-size: 1.5rem;
+    padding-bottom: 150px;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ccc;
+}
+
+.footer_1 img{ 
+    width: 310px;
+    height: 100px;
+  
+}
+footer h4{
+    color: #C49A6C;
+}
+footer ul li a:hover{
+    color: #C49A6C;
+
+}
+.footer_4 input{
+    border: 1px solid #000;
+    padding: 12px 18px 12px 12px ;
+}
+.button-footer{
+    border: none;
+    width: 312px;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.button-footer:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.icons{
+    margin-left: -55px;
+    display: flex;
+}
+.banquyen{
+    color: #c9a783;
+    font-size: 18px;
+    font-weight: 700;
+    /* height: 50px; */
+    /* padding: 1px 0; */
+    margin-bottom: 1px;
+} 
+.banquyen p{
+    margin-left: 40px;
+}
+
+.btn_contact {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #c9a783 0%,#C49A6C 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+.btn_contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+.btn_contact:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+.btn_contact span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+.btn_contact svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+.btn_contact .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+.btn_contact:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+.btn_contact:hover svg {
+    transform: rotate(45deg);
+  }
+  
+  
